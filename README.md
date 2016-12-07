@@ -12,21 +12,7 @@ Just like [fs](https://github.com/synrc/fs#backends)
 - Linux inotify
 - Windows inotify-win (untested)
 
-NOTE: On Linux you need to install inotify-tools:
-
-```bash
-which yum
-if [[ $? -eq 0 ]]
-then
-    sudo yum install -y inotify-tools
-else
-    which apt-get
-    if [[ $? -eq 0 ]]
-    then
-        sudo apt-get install -y inotify-tools
-    fi
-fi
-```
+NOTE: On Linux you need to install inotify-tools [`./scripts/install_inotify.sh`](scripts/install_inotify.sh).
 
 ## Usage
 
