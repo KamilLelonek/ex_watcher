@@ -1,5 +1,7 @@
 # ex_watcher
 
+[![Build Status](https://travis-ci.org/KamilLelonek/ex_watcher.svg?branch=master)](https://travis-ci.org/KamilLelonek/ex_watcher)
+
 An Elixir file change watcher based on [fs](https://github.com/synrc/fs)
 
 ## System Support
