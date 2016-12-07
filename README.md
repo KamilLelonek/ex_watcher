@@ -25,12 +25,12 @@ defmodule MyProject.Mixfile do
   # ...
 
   def application do
-    [applications: [:exfswatch, :logger]]
+    [applications: [:ex_watcher, :logger]]
   end
 
   defp deps do
     [
-      {:exfswatch, "~> 0.1.0"},
+      {:ex_watcher, "~> 0.1.0"},
     ]
   end
   
