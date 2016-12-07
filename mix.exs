@@ -8,7 +8,9 @@ defmodule ExWatcher.Mixfile do
       elixir:          "~> 1.3",
       build_embedded:  Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
-      deps:            deps()
+      deps:            deps(),
+      description:     description(),
+      package:         package(),
     ]
   end
 
@@ -32,14 +34,15 @@ defmodule ExWatcher.Mixfile do
     ]
   end
 
-  defp description do
+  defp description() do
     """
-    An Elixir file change watcher
+      An Elixir file change watcher
     """
   end
 
-  defp package do
+  defp package() do
     [
+      name:        :ex_watcher,
       files:       ["lib", "config", "mix.exs", "README.md"],
       maintainers: ["Kamil Lelonek"],
       licenses:    ["MIT"],
